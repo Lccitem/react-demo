@@ -6,7 +6,7 @@
     <title>React!</title>
     <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
-    <script src="https://cdn.bootcdn.net/ajax/libs/babel-core/6.0.0/browser.min.js"></script>
+    <script src="https://cdn.staticfile.org/babel-standalone/6.26.0/babel.min.js"></script>
     <style>
         a {
             text-decoration: none;
@@ -107,26 +107,32 @@
                     },
                     {
                         id: 6,
-                        title: "网城零售-ToB产品运营 （猫超卡）-用户运营部111",
+                        title: "网城零售-ToB产品运营 （猫超卡）-用户运营部",
                         area: "杭州",
                         time: "9分钟"
                     }, {
                         id: 7,
-                        title: "阿里云智能事业群-系统研发专家-机器学习平台222",
-                        area: "杭州",
-                        time: "19分钟"
+                        title: "阿里云智能事业群-机器学习平台",
+                        area: "上海",
+                        time: "10分钟"
                     }, {
                         id: 8,
-                        title: "中台运营事业部-品牌搜索产品运营-上海",
+                        title: "中台运营事业部-上海",
                         area: "上海",
                         time: "19分钟"
                     }, {
                         id: 9,
-                        title: "阿里妈妈技术-前端开发专家/高级专家-北京",
+                        title: "阿里妈妈技术-前端开发专家-北京",
                         area: "北京",
                         time: "19分钟"
                     }, {
                         id: 10,
+                        title: "同城零售-渠道拓展专家-天猫超市",
+                        area: "杭州",
+                        time: "19分钟"
+                    },
+                    {
+                        id: 11,
                         title: "同城零售-渠道拓展专家-天猫超市",
                         area: "杭州",
                         time: "19分钟"
@@ -186,13 +192,13 @@
                     <div className="content">
                         <div className="title">
                             最新职位
-                            <a className="link" href="javascript:;">更多</a>
+                            <a className="link" href="#">更多</a>
                         </div>
                         <ul className="list" onMouseOver={()=>this.onMouseOver()} onMouseOut={()=>this.onMouseOut()}>
                             {arr.map((item, i) => {
                                 return (
                                     <li className="item" key={item.id}>
-                                        <a href="javascript:;">{item.title}</a>
+                                        <a href="#">{item.title}</a>
                                         <span style={{ textAlign: 'center' }}>{item.area}</span>
                                         <span>{item.time}</span>
                                     </li>
